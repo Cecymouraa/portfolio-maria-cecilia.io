@@ -1,0 +1,175 @@
+/* HERO */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+
+.project-hero {
+    background: linear-gradient(135deg, #2e1065, #4c1d95);
+    color: white;
+    padding: 80px 10%;
+}
+
+
+
+.project-hero h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.project-hero p {
+    max-width: 600px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.back-link {
+    color: #ddd6fe;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.project-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.tag {
+    background: #6d28d9;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-light {
+    background: white;
+    color: #4c1d95;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* LAYOUT */
+.project-content-wrapper {
+    display: flex;
+    gap: 40px;
+    padding: 60px 10%;
+    background: #f4f4f6;
+}
+
+.project-main {
+    flex: 3;
+}
+
+.project-main h2 {
+    margin-bottom: 20px;
+    color: #2e1065;
+}
+
+.gallery-main {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+/* SIDEBAR */
+.project-sidebar {
+    flex: 1;
+}
+
+.sidebar-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.btn-dark {
+    display: block;
+    background: #4c1d95;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.full {
+    width: 100%;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .project-content-wrapper {
+        flex-direction: column;
+    }
+}
+
+
+/* Container Principal de Desafios */
+.challenges-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    /* Borda lateral roxa da foto */
+    border-left: 5px solid #8b5cf6; 
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    align-items: flex-start;
+}
+
+/* Estilo do Ícone (o "i" de informação na foto) */
+.challenges-box::before {
+    content: 'ⓘ'; /* Ícone de informação */
+    font-size: 1.5rem;
+    color: #8b5cf6;
+    font-weight: bold;
+    margin-top: -2px;
+}
+
+/* Título dentro da caixa */
+.challenges-box h4 {
+    margin: 0 0 10px 0;
+    color: #1e1b4b;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Texto descritivo */
+.challenges-box p {
+    margin: 0;
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
