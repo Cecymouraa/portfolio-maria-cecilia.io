@@ -1,7 +1,12 @@
 /* HERO */
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
+     overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -45,10 +50,11 @@ p {
 }
 
 .tag {
-    background: #6d28d9;
+    background: #421488;
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 0.8rem;
+    color: aliceblue;
 }
 
 .hero-buttons {
@@ -87,7 +93,7 @@ p {
 
 .project-main h2 {
     margin-bottom: 20px;
-    color: #2e1065;
+    color: #340846;
 }
 
 .gallery-main {
@@ -173,3 +179,113 @@ p {
 }
 
 
+/* ========================= */
+/* RESPONSIVO */
+/* ========================= */
+@media (max-width: 480px) {
+    .project-tags {
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+
+    .project-content-wrapper {
+        flex-direction: column;
+        padding: 40px 6%;
+    }
+
+    .project-hero {
+        padding: 60px 6%;
+    }
+
+    .project-hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .gallery-main {
+        height: 220px;
+    }
+
+    .project-sidebar {
+        width: 100%;
+    }
+
+    .challenges-box {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .challenges-box::before {
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra Mobile Pequeno */
+
+@media (max-width: 480px) {
+
+    .project-hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .project-hero p {
+        font-size: 0.9rem;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+        padding: 5px 10px;
+    }
+
+    .gallery-main {
+        height: 180px;
+    }
+}
+
+
+/* ========================= */
+/* CHALLENGES BOX */
+/* ========================= */
+
+.challenges-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #8b5cf6; 
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    align-items: flex-start;
+}
+
+.challenges-box::before {
+    content: 'ⓘ';
+    font-size: 1.5rem;
+    color: #8b5cf6;
+    font-weight: bold;
+    margin-top: -2px;
+}
+
+.challenges-box h4 {
+    margin: 0 0 10px 0;
+    color: #1e1b4b;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.challenges-box p {
+    margin: 0;
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
